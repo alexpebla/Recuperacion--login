@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7b22d2da3.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    
+
+    <main class="login-main">
+        <div class="login-form-container">
+            <h1>INICIAR SESIÓN</h1>
+            <form method="POST" action="/login" id="login-form">
+                <div class="input-container-padre">
+                    <% if (typeof errors != 'undefined') { %>
+                        <div class="error-div">
+                            <p style="color: red">
+                                <%= errors.errors[0].msg %> 
+                            </p>
+                        </div>
+                    <% } %>
+                        <input  class="text-input correoAlex" type="mail" name="correo" placeholder="Usuario" >
+                        <input class="text-input" type="password" name="password" placeholder="Contraseña" >
+                </div>
+                <div class="boton_padre">
+                    <button class="shop_button" name="button" type="submit">Ingresar</button>
+                    <div class="boton_hijo2">
+                        <p><a href="#">¿Olvidaste tu Contraseña?</a> 
+                        <p><a href="/">¿No tienes Cuenta? Registrate</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+<script src="/login.js"></script>
+
+</body>
+</html>

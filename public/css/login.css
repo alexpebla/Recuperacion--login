@@ -1,0 +1,173 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+select:focus{
+    outline: none;
+  }
+  input:focus{
+    outline: none;
+  }
+  textarea:focus{
+    outline: none;
+  }
+
+
+
+body{
+    font-size: 14px;
+    color: black;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.login-main{
+    margin-left: 0;
+}
+
+.error-div {
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+    padding: 0.3rem 0rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.shop_button {
+    background-color: #1133bb;
+    border-radius: 3px;
+    border-width: 0;
+    box-shadow: rgba(49, 15, 122, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    transition: box-shadow .15s,transform .15s;
+    width: 50%;
+}
+
+.shop_button:hover {
+    box-shadow: rgba(54, 21, 124, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
+    transform: translateY(-2px);
+}
+
+button{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 6em;
+    height: 2em; 
+    border: none;
+    border-radius: 7px;
+}
+button:hover{
+    cursor: pointer;
+}
+.boton1{
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    transition: all 0.4s;
+    width: 90%;
+}
+
+.boton2{
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    transition: all 0.4s;
+    width: 90%;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.botones1{
+    display: block;
+    font-size: 7px;
+}
+
+.input-container-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+.text-input{
+    border: none;
+    width: 60%;
+    padding: 10px 5%;
+    border: 2px solid #ABABAB;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+
+.text-input:hover{
+    border-color: rgb(9, 9, 9);
+}
+
+.boton_padre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.boton_hijo2{
+    font-size: small;
+    padding-left: 12px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.login-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* margin: 2rem; */
+
+}
+
+.login-form-container {
+    text-align: center;
+    width: 70%;
+    padding: 1.5rem;
+    background-color: #ABABAB;
+}
+
+
+.redAlex{
+    background-color: #1133bb;
+}
