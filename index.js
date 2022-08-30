@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 // import mongoose from 'mongoose';
 const router = require('./routes');
 // import apiRouter from './routes/index';
-const mainRouter = require("./routes/mainRoutes")
+const mainRouter = require("./routes/mainRouter")
 const path = require("path")
 
 //conexión a la base de datos

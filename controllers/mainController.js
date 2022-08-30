@@ -1,7 +1,8 @@
 const models = require('../models');
 const bcrypt = require('bcryptjs');
 
-module.exports = {
+
+module.exports  = {
     
     login :(req, res) => {
         res.render('login')},
@@ -37,3 +38,4 @@ module.exports = {
             }
         }
     }
+ 
