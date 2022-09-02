@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7b22d2da3.js" crossorigin="anonymous"></script>
+    <title>Profile | Sneakicks</title>
+</head>
+
+<body>
+
+
+        <main class="main-container">
+            <div class="left-container">
+                <div class="top-container">
+                    <h3>Hola de nuevo <%= session.first_name %>!</h3>
+                    <div class="avatar-container">
+                        <img src="/img/users/<%= session.image %>" alt="User profile picture" width="100px"
+                            height="auto">
+                    </div>
+                </div>
+                <div class="orders-container">
+                    <div class="orders-title">
+                        <h3>Historial de compras</h3>
+                    </div>
+                    <p>No tienes compras aun</p>
+                </div>
+            </div>
+            <div class="profile-container">
+
+                <div class="profile-title">
+                    <h3>Tu perfil</h3>
+                    <form action="/users/signout" method="POST" id="signout-form">
+                        <button class='edit-button' type="submit" value="Cerrar sesion">
+                            Cerrar sesion - <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </div>
+                <li>
+                    <ul>Name: <%= session.first_name %>
+                            <%= session.last_name %>
+                    </ul>
+                    <ul>Email: <%= session.email %>
+                    </ul>
+                    <ul>Avatar:</ul>
+                    <div class="small-avatar-container">
+                        <img src="/img/users/<%= session.image %>" height="60px">
+                    </div>
+                </li>
+                <form action="/users/<%= session.user_id %>/edit" method="GET">
+                    <button class='edit-button' type="submit" value="Editar perfil">Editar Perfil</button>
+                </form>
+            </div>
+        </main>
+
+      
+</body>
+
+</html>
