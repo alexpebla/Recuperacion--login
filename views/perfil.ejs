@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/f7b22d2da3.js" crossorigin="anonymous"></script>
-    <title>Profile | Sneakicks</title>
+    <title>Perfil</title>
 </head>
 
 <body>
@@ -23,11 +23,8 @@
         <main class="main-container">
             <div class="left-container">
                 <div class="top-container">
-                    <h3>Hola de nuevo <%= session.first_name %>!</h3>
-                    <div class="avatar-container">
-                        <img src="/img/users/<%= session.image %>" alt="User profile picture" width="100px"
-                            height="auto">
-                    </div>
+                    <h3>Hola de nuevo <%= nombre %>!</h3>
+                    
                 </div>
                 <div class="orders-container">
                     <div class="orders-title">
@@ -47,19 +44,13 @@
                     </form>
                 </div>
                 <li>
-                    <ul>Name: <%= session.first_name %>
-                            <%= session.last_name %>
+                    <ul>Name: <%= nombre %>
                     </ul>
-                    <ul>Email: <%= session.email %>
+                    <ul>Email: <%= correo %>
                     </ul>
-                    <ul>Avatar:</ul>
-                    <div class="small-avatar-container">
-                        <img src="/img/users/<%= session.image %>" height="60px">
-                    </div>
+                    <ul>Tipo de usuario: <%= rol %>
+                    </ul>
                 </li>
-                <form action="/users/<%= session.user_id %>/edit" method="GET">
-                    <button class='edit-button' type="submit" value="Editar perfil">Editar Perfil</button>
-                </form>
             </div>
         </main>
 

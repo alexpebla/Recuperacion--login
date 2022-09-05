@@ -7,4 +7,6 @@ router.get ("/login",mainController.login)
 
 router.post ("/login",mainController.loginProcess)
 
+router.get('/perfil', mainController.perfil);
+
 module.exports = router;
